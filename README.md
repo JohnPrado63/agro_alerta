@@ -79,6 +79,8 @@ Servicios:
 - Swagger: `http://localhost:8000/docs`
 - PostgreSQL/PostGIS: `localhost:5432`
 
+En el contenedor, Nginx reenvía las solicitudes `/api/` al servicio `backend:8000` de Compose y conserva la ruta de la petición. Las demás rutas sirven `index.html` para que React Router pueda resolverlas.
+
 ## Migraciones
 
 ```powershell
