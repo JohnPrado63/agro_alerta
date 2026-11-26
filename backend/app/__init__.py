@@ -1,0 +1,1 @@
+"""AGROALERTA backend application."""
